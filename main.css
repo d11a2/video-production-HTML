@@ -21,7 +21,7 @@ body, html {
 }
 
 body .main__page-wrapper {
-    background: url(/img/hero.png) center top no-repeat, url(/img/bottom-pic.png) center bottom 306px no-repeat, url(/img/фон.png) repeat;
+    background: url(./img/hero.png) center top no-repeat, url(./img/bottom-pic.png) center bottom 306px no-repeat, url(./img/фон.png) repeat;
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
