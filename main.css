@@ -5,7 +5,7 @@
 body {
     font-family: "Open Sans", Helvetica, sans-serif;
     margin: 0px;
-    background: #29292c;
+    background: #17191C;
     color: #fff;
     font-size: 16px;
     line-height: 1.42;
@@ -20,10 +20,12 @@ body, html {
     
 }
 
-body {
-    background-image: url(img/hero.png), url(img/bottom-pic.png);
-    background-position: left top, left bottom;
-    background-repeat: no-repeat, no-repeat;
+body .main__page-wrapper {
+    background: url(/img/hero.png) center top no-repeat, url(/img/bottom-pic.png) center bottom 306px no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
 }
 
 a {
@@ -130,8 +132,10 @@ button {
 
 
 
-.hero__text-section {
+.hero__content    {
     text-align: center;
+    width: 780px;
+    margin: auto;
 }
 
 .hero__title {
@@ -153,15 +157,6 @@ button {
     margin-bottom: 45px;
 }
 
-
-
-.block1 {
-    width: 100px;
-    background-color: aqua ;
-    padding: 15px;
-    margin: 15px;
-    border: 15px;
-}
 
 .services {
     margin-top: 233px;
