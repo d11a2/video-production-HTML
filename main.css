@@ -262,7 +262,6 @@ button {
     display: inline-block;
     vertical-align: top;
     width: 555px;
-    border: 1px solid white;
 
     margin-left: 25px;
     position: relative;
@@ -414,7 +413,6 @@ button {
 
 .socials__item {
     display: inline-block;
-    margin-right: 10px;
 }
 
 .footer__contacts {
