@@ -7,7 +7,7 @@ body {
     margin: 0px;
     background: #17191C;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.42;
 
     -webkit-font-smoothing: atnialiased;
@@ -18,6 +18,14 @@ body, html {
     width: 100%;
     height: 100%;
     
+}
+
+.body__wrapper {
+    position: absolute;
+    width: 1920px;
+    height: 2935px;
+    left: 0px;
+    top: -5px;
 }
 
 body .main__page-wrapper {
@@ -44,14 +52,23 @@ h1, h2, h3, h4, p {
 }
 
 .header {
-    height: 130px;
-    position: relative;
+    /* height: 130px; */
+    /* position: relative; */
+    padding-top: 40px;
     margin-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.logo, .menu, .contacts {
-    position: absolute;
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 500px;
 }
+
+/* .logo, .menu, .contacts {
+} */
 
 .logo {
     top: 26px;
@@ -59,19 +76,21 @@ h1, h2, h3, h4, p {
     display: block;
 }
 
-.menu {
-    top: 19px;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-}
-
-
 ul li {
     list-style: none;
     padding: 0px;
     margin: 0px;
 }
+
+ul {
+    padding-inline-start: 0;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .menu__link {
     color: white;
     font-size: 14px;
@@ -96,6 +115,13 @@ ul li {
 
 }
 
+.socials__list {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: calc(30px + 36px * 4);
+}
+
 
 .contacts {
     right: 0px;
@@ -117,9 +143,9 @@ ul li {
     
 }
 
-.footer {
+/* .footer {
     position: relative;
-}
+} */
 
 button {
     background: transparent;
@@ -163,63 +189,71 @@ button {
 }
 
 .services__list {
-    padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
+
+/* ul.services__list{
+    padding-inline-start: 0;
+} */
 .services__header {
+    font-size: 32px;
+    line-height: 44px;
     font-weight: bold;
     margin-bottom: 17px;
 }
 .services__item {
-    display: inline-block;
-    vertical-align: top;
+    /* display: inline-block; */
+    /* vertical-align: top; */
 
-    width: 362px;
+    width: calc(100% / 3 - 18px);
     background-color: white;
-    max-height: 476px;
-    margin-right: 27px;
+    min-height: 450px;
+    /* margin-right: 27px; */
     color: black;
+    overflow: hidden;
+    line-height: 22px;
 
-    padding: 22px;
+    padding: 40px 34px 53px 22px;
     border-radius: 5px;
-}
+} 
 
-.services__item:last-child {
+.services__item b {
+    color: black;
+}
+/* .services__item:last-child {
     margin-right: 0px;
 }
 
 
 .services__item:last-child {
     margin-right: 0;
-}
+} */
 
 .services__icon {
-    margin-top: 12px;
     margin-bottom: 30px;
     margin-left: 7px;
 }
 
 .services__text-block {
-    display: inline-block;
-    width: 123px;
-    margin-right: 20px;
-}
-.services__text-block:last-child {
-    display: inline-block;
-    margin-right: 0;
+    width: calc(50% - 40px);
+    color:  #666666;
+    /* margin-right: 20px; */
 }
 
 .services__button-wrapper {
-    margin-bottom: 53px;
+    margin-top: 29px;
+    /* margin-bottom: 31px; */
 }
-.services__text-desc{
+.services__text-desc {
     margin-top: 25px;
-    display: inline-block;
     font-size: 14px;
-
+    color:  #666666;
 }
 
 .services__text-wrapper {
-    margin-bottom: 29px;
+    display: flex;
+    justify-content: space-between;
 
 }
 
@@ -255,22 +289,24 @@ button {
     margin: 0;
     margin-top: 51px;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 
 .news__item {
-    display: inline-block;
-    vertical-align: top;
-    width: 555px;
+    /* display: inline-block;
+    vertical-align: top; */
+    width: calc(50% - 12px);
 
-    margin-left: 25px;
-    position: relative;
+    /* margin-left: 25px; */
+    /* position: relative; */
     overflow: hidden;
 }
 
-.news__item:first-child {
+/* .news__item:first-child {
     margin-left: 0px;
-}
+} */
 
 /* .news_item:last-child {
     margin-right: 0;
@@ -281,7 +317,7 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 25px 30px;
+    padding: 25px 80px 25px 30px;
     min-height: 140px;
 }
 
@@ -291,23 +327,43 @@ button {
 
 .news__img {
     display: block;
-    max-width: 557px;
+    /* max-width: 557px; */
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .news__item {
-    display: inline-block;
+    /* display: inline-block; */
     vertical-align: top;
+    position: relative;
 }
+
+.news__subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 12px;
+}
+
+.news__text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 9px;
+}
+
 
 .paginator {
-    text-align: center;
+    margin-top: 53px;
+    height: 32px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.paginator__description, .paginator__list, .paginator__item {
-    display: inline-block;
+.paginator__list {
+    display: flex;
+    align-items: center;
 }
 
 .paginator__link {
@@ -317,12 +373,15 @@ button {
     font-weight: 700;
     display: block;
     /* vertical-align: bottom; */
-    text-align: center;
     border-radius: 50%;
     width: 32px;
     height: 32px;
     line-height: 32px;
     /* position: relative; */
+}
+
+.paginator__item {
+    text-align: center;
 }
 
 .paginator__link-active {
@@ -340,46 +399,60 @@ button {
     margin-bottom: 53px;
 }
 
-.about__title {
-    font-weight: 800;
-    font-size: 36px;
+
+.about__content:before {
+    content: "";
+    width: 490px;
+    height: 505px;
+    background: url("./img/cameraman.png") center center / cover no-repeat;
 }
 
-.about__img-wrapper , .about__content {
+.about__desc {
+    background: white;
+    padding: 70px 202px 66px 81px;
+    border-radius: 5px;
+    width: 785px;
+    margin-left: -137px;
+    margin-top: 97px;
+    line-height: 27px;
+    font-size: 16px;
+
+}
+
+.about__content:before, .about__desc {
     display: inline-block;
     vertical-align: top;
 }
 
-.about__content {
-    background: white;
-    width: 755px;
-    height: 455px;
-    margin-left: -100px;
-    margin-top: 100px;
-
-    padding: 70px 81px 66px;
-    position: relative;
-
-    border-radius: 5px;
+.about__desc-title {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 49px;
+    text-transform: uppercase;
+    margin-bottom: 37px;
 }
 
-.about__text {
-    margin-top: 37px;
+
+.about__desc-text {
+    margin-bottom: 43px;
 }
+
+.about__desc-text p {
+    margin-bottom: 20px;
+}
+
+.about__desc-text p:last-child {
+    margin-bottom: 0px;
+}
+
 
 .about__button-wrapper {
     display: inline-block;
-    position: absolute;
+    /* position: absolute; */
     bottom: 66px;
 }
 
-.body__wrapper {
-    position: absolute;
-    width: 1920px;
-    height: 2935px;
-    left: 0px;
-    top: -5px;
-}
+
 
 
 .footer {
@@ -391,10 +464,12 @@ button {
 }
 
 .footer__container {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
 }
 
-.footer__container .menu {
+/* .footer__container .menu {
 
     left: 400px;
     top: 0;
@@ -402,34 +477,60 @@ button {
 
 .footer__container .logo {
     top: 0;
-}
+} */
 
 .socials {
-    position: absolute;
-    right: 250px;
+    /* position: absolute; */
+    /* right: 250px;
     display: block;
-    margin-right: 74px;
+    margin-right: 74px; */
+    margin-top: 0;
 }
 
 .socials__item {
-    display: inline-block;
+    /* display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; */
+}
+
+.socials__item:last-child {
+    margin-right: 0;
+}
+
+.socials__link {
+    display: block;
+    text-decoration: none;
+    width: 36px;
+    height: 36px;
+    background: center center no-repeat;
+}
+
+.socials__item-icon-telegram .socials__link {
+    background-image: url(./img/telegram.png);
+}
+
+.socials__item-icon-vk .socials__link {
+    background-image: url(./img/vk.png);
+}
+.socials__item-icon-fb .socials__link {
+    background-image: url(./img/f.png);
+}
+.socials__item-icon-inst .socials__link {
+    background-image: url(./img/in.png);
 }
 
 .footer__contacts {
-    right: 0px;
-    top: 10px;
+    /* right: 0px;
+    top: 10px; */
     font-style: normal;
     text-align: right;
-    position: absolute;
+    /* position: absolute; */
 }
 
-.footer__contacts_phone {
-    text-decoration: none;
-    font-size: 26px;
-    margin-bottom: 4px;
-}
+
 
 .footer__contacts-text {
+    font-size: 11px;
     color:  #9A9A9A;
 }
 
