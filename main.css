@@ -244,6 +244,7 @@ button {
     border-radius: 35px;
 
     font-size: 14px;
+    line-height: 19px;
     text-transform: uppercase;
     color: white;
     padding: 19px 54px;
@@ -359,7 +360,6 @@ button {
 
 .paginator__link:hover {
     background: #FF5500;
-
 }
 
 .about {
@@ -546,6 +546,12 @@ button {
     display: flex;
 }
 
+.button:hover  {
+    border-color: #FF5500;
+    background: white; 
+    color: #FF5500;
+}
+
 .service-page__service-content {
     
     display: flex;
@@ -562,16 +568,27 @@ button {
     margin-bottom: 25px;
 }
 
-.service-page__service-desc {
-    margin-bottom: 34px;
+.service-page__service-desc p{
+    margin-top: 34px;
+    font-size: 16px;
+    line-height: 27px;
 }
 
-div .button  {
+
+.service-page__service-desc p:first-child{
+    margin-top: 0;
+}
+
+.service-page__service-content .button  {
     width: 198px;
 }
 
+.service-page__service-content .button {
+    margin-top: 25px;
+}
+
 .services__img-item {
-    height: 100%;
+    max-height: 100%;
     max-width: 460px;
 }
 
@@ -585,4 +602,42 @@ div .button  {
 
 .service-page .paginator__link  {
     color: black;
+}
+
+.service-page  .paginator__link:hover {
+    background: #FF5500;
+    color: white;
+}
+
+.inner__section {
+    background: #F4F5F5;
+    
+    padding: 88px 0 110px 0;
+    
+}
+
+.inner__section__title {
+    font-size: 48px;
+    line-height: 65px;
+    font-weight: 700;
+    color: #1A1B1E;
+}
+
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.partners__link {
+    text-decoration: none;
+    display: flex;
+    width: 270px;
+    height: 140px;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners__item {
+    margin-left: -30px;
 }
