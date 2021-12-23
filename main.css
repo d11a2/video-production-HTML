@@ -47,14 +47,17 @@ h1, h2, h3, h4, p {
     font-weight: normal;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 .container {
     width: 1150px;
     margin: 0 auto;
 }
 
 .header {
-    /* height: 130px; */
-    /* position: relative; */
     padding-top: 40px;
     margin-bottom: 150px;
     display: flex;
@@ -67,9 +70,6 @@ h1, h2, h3, h4, p {
     justify-content: space-between;
     min-height: 500px;
 }
-
-/* .logo, .menu, .contacts {
-} */
 
 .logo {
     top: 26px;
@@ -190,9 +190,6 @@ button {
     justify-content: space-between;
 }
 
-/* ul.services__list{
-    padding-inline-start: 0;
-} */
 .services__header {
     font-size: 32px;
     line-height: 44px;
@@ -200,13 +197,10 @@ button {
     margin-bottom: 17px;
 }
 .services__item {
-    /* display: inline-block; */
-    /* vertical-align: top; */
 
     width: calc(100% / 3 - 18px);
     background-color: white;
     min-height: 450px;
-    /* margin-right: 27px; */
     color: black;
     overflow: hidden;
     line-height: 22px;
@@ -218,14 +212,6 @@ button {
 .services__item b {
     color: black;
 }
-/* .services__item:last-child {
-    margin-right: 0px;
-}
-
-
-.services__item:last-child {
-    margin-right: 0;
-} */
 
 .services__icon {
     margin-bottom: 30px;
@@ -235,12 +221,10 @@ button {
 .services__text-block {
     width: calc(50% - 40px);
     color:  #666666;
-    /* margin-right: 20px; */
 }
 
 .services__button-wrapper {
     margin-top: 29px;
-    /* margin-bottom: 31px; */
 }
 .services__text-desc {
     margin-top: 25px;
@@ -292,22 +276,11 @@ button {
 
 
 .news__item {
-    /* display: inline-block;
-    vertical-align: top; */
+    
     width: calc(50% - 12px);
 
-    /* margin-left: 25px; */
-    /* position: relative; */
     overflow: hidden;
 }
-
-/* .news__item:first-child {
-    margin-left: 0px;
-} */
-
-/* .news_item:last-child {
-    margin-right: 0;
-} */
 
 .news__content {
     position: absolute;
@@ -324,14 +297,12 @@ button {
 
 .news__img {
     display: block;
-    /* max-width: 557px; */
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .news__item {
-    /* display: inline-block; */
     vertical-align: top;
     position: relative;
 }
@@ -369,16 +340,13 @@ button {
 
 .paginator__link {
     color: white;
-    /* background: #FF5500; */
     
     font-weight: 700;
     display: block;
-    /* vertical-align: bottom; */
     border-radius: 50%;
     width: 32px;
     height: 32px;
     line-height: 32px;
-    /* position: relative; */
 }
 
 .paginator__item {
@@ -456,7 +424,6 @@ button {
 
 .about__button-wrapper {
     display: inline-block;
-    /* position: absolute; */
     bottom: 66px;
 }
 
@@ -499,11 +466,8 @@ button {
 }
 
 .footer__contacts {
-    /* right: 0px;
-    top: 10px; */
     font-style: normal;
     text-align: right;
-    /* position: absolute; */
 }
 
 
@@ -514,4 +478,111 @@ button {
 }
 
 
+/* services page */
 
+.top-line {
+    min-height: 416px;
+    background: url(./img/top-line.png) right 20% top no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-line__container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 27px;
+}
+
+.top-line__container .header {
+    margin-bottom: 0 ;
+}
+
+.page-title {
+    font-size: 72px;
+    line-height: 1;
+    font-weight: 800;
+}
+
+.breadcrumbs__list {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs__link {
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration: underline;
+    color: #9A9A9A;
+}
+
+.breadcrumbs__item-active .breadcrumbs__link {
+    font-weight: 700;
+}
+
+.breadcrumbs__item:after {
+    content: " / ";
+    margin-left: 4px;
+    margin-right: 4px;
+    color: #9A9A9A;
+}
+
+.breadcrumbs__item:last-child:after {
+    display: none;
+}
+.breadcrumbs__item {
+    display: flex;
+    align-items: center;
+}
+
+.page-content {
+    background: white;
+    color: #303030;
+    padding: 94px 0 91px 0;
+}
+
+.service {
+    display: flex;
+}
+
+.service-page__service-content {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px 12px 12px 56px;
+}
+
+.service-page__service-title {
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 49px;
+    margin-bottom: 25px;
+}
+
+.service-page__service-desc {
+    margin-bottom: 34px;
+}
+
+div .button  {
+    width: 198px;
+}
+
+.services__img-item {
+    height: 100%;
+    max-width: 460px;
+}
+
+.service-page__service-item:last-child {
+    margin-top: 49px;
+}
+
+.paginator .service-page {
+    margin-top: 69px;
+}
+
+.service-page .paginator__link  {
+    color: black;
+}
