@@ -43,10 +43,16 @@
     align-items: center;
     font-size: 24px;
     font-weight: 700;
-    color: #2E77A4;
+    color: #202020;
     margin-bottom: 11px;
     background: #F4F5F5;
 }
+
+.review__user:hover {
+    color: #2E77A4;
+    text-decoration: underline;
+}
+
 
 .review__user:after     {
     content: url("./img/vk-blue\ 1.png");
@@ -82,6 +88,7 @@
 .review__content-text {
     margin-bottom: 50px;
     color: #818181;
+    line-height: 27px;
 }
 
 .review__date {
