@@ -486,6 +486,7 @@ button {
     font-weight: 700;
     font-size: 13px;
     line-height: 21px;
+    white-space: nowrap;
 }
 
 .lunch__time {
@@ -505,7 +506,7 @@ button {
 
 .dropdown__schedule {
     margin-top: 10px;
-    width: 163px;
+    width: 160px;
     position: absolute;
     text-align: left;
     background: #CDD1D2;
