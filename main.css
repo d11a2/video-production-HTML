@@ -477,3 +477,73 @@ button {
     color:  #9A9A9A;
 }
 
+
+
+
+/*  dropdown menu  */
+
+.working__days {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.lunch__time {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.contacts__dropdown-title {
+    position: relative;
+}
+
+.contacts__dropdown-title:hover .dropdown__schedule {
+    right: 0;
+    opacity: 0.8;
+}
+
+.dropdown__schedule {
+    margin-top: 10px;
+    width: 160px;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    background: #CDD1D2;
+    font-size: 13px;
+    line-height: 21px;
+    text-decoration: none;
+    padding: 10px 19px 10px 19px;
+    color: #1E1F20;
+    opacity: 0;
+    transition: opacity .5s;
+    border-radius: 3px;
+    right: -99999999px;
+}
+
+.dropdown__schedule:before {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 40px;
+    right: 0;
+    top: -39px;
+}
+
+.triangle {
+    position: absolute;
+    border: 13px solid transparent;
+    border-bottom-width: 10px;
+    border-bottom-color: #CDD1D2;
+    border-top-width: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    right: -99999999px;
+}
+
+.contacts__dropdown-title:hover .triangle {
+    right: 45px;
+    opacity: 0.8;
+}
