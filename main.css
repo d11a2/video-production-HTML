@@ -505,9 +505,8 @@ button {
 
 .dropdown__schedule {
     margin-top: 10px;
-    width: 160px;
+    width: 163px;
     position: absolute;
-    right: 0;
     text-align: left;
     background: #CDD1D2;
     font-size: 13px;
